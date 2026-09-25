@@ -1,0 +1,99 @@
+<?php
+    $resposta = (string) readline("É mamífero? (sim/não): ");
+
+    if($resposta === "sim"){
+        $resposta = (string) readline("É quadrúpede? (sim/não): ");
+        if ($resposta === "sim"){
+            $resposta = (string) readline ("É carnívoro? (sim/não): ");
+            if($resposta === "sim"){
+                echo "Leão";
+            }elseif($resposta === "nao"){
+                $resposta = (string) readline("É herbívoro? (sim/não): ");
+                if($resposta === "sim"){
+                    echo "Cavalo";
+                }else{
+                    echo "Animal não identificado.";
+                }
+            }
+        }elseif($resposta === "nao"){
+            $resposta = (string) readline("É Bípede? (sim/não): ");
+            if ($resposta === "sim"){
+                $resposta = (string) readline ("É onívero? (sim/não): ");
+                if($resposta === "sim"){
+                    echo "Homem";
+                }elseif($resposta === "nao"){
+                    $resposta = (string) readline("É frutívero? (sim/não): ");
+                    if($resposta === "sim"){
+                        echo "Macaco";
+                    }else{
+                    echo "Animal não identificado.";
+                    }
+                }
+            }elseif($resposta === "nao"){
+                $resposta = (string) readline("É voadores? (sim/não): ");
+                if($resposta === "sim"){
+                    echo "Morcego";
+                }elseif($resposta === "nao"){
+                    $resposta = (string) readline("É aquático? (sim/não): ");
+                    if($resposta === "sim"){
+                        echo "Baleia";
+                    }else{
+                    echo "Animal não identificado.";
+                    }
+                }
+            }
+       }
+    }elseif($resposta === "nao"){
+        $resposta = (string) readline("É aves? (sim/não): ");
+        if($resposta === "sim"){
+            $resposta = (string) readline("É não voadores? (sim/não): ");
+            if($resposta === "sim"){
+                $resposta = (string) readline("É tropicais? (sim/não): ");
+                if($resposta === "sim"){
+                    echo "Avestruz";
+                }elseif($resposta === "nao"){
+                    $resposta = (string) readline("É polares? (sim/não): ");
+                    if($resposta === "sim"){
+                        echo "Pinguim";
+                    }else{
+                        echo "Animal não identificado.";
+                    }
+                }
+            }elseif($resposta === "nao"){
+                $resposta = (string) readline("É nadadores? (sim/não): ");
+                if($resposta === "sim"){
+                    echo "Pato";
+                }elseif($resposta === "nao"){
+                    $resposta = (string) readline("É de rapina? (sim/não): ");
+                    if($resposta === "sim"){
+                        echo "Águia";
+                    }else{
+                    echo "Animal não identificado.";
+                    }
+                }
+            }
+        }elseif($resposta === "nao"){
+            $resposta = (string) readline("É répteis? (sim/não): ");
+            if($resposta === "sim"){
+                $resposta = (string) readline("É com casco (sim/não): ");
+                if($resposta === "sim"){
+                    echo "Tartaruga";
+                }elseif($resposta === "nao"){
+                    $resposta = (string) readline("É carnívoro? (sim/não):");
+                    if($resposta === "sim"){
+                        echo "Crocodilo";
+                    }elseif($resposta === "nao"){
+                        $resposta = (string) readline("É sem patas? (sim/não): ");
+                        if($resposta === "sim"){
+                            echo "Cobra";
+                        }else{
+                            echo "Animal não identificado.";
+                        }
+                    }
+                }
+            }else{
+                echo "Animal não identificado.";
+            }
+        }
+    }
+?>
